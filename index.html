@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6444ab55f7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="brand">
+          <a href="index.html"><img id="logo" src="img/video-game-controller.png" alt="logo"></a>
+          <a href="index.html"><h1>Paul's Consoles</h1></a>
+        </div>
+        
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html" id="shop-nav">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="front-img">
+      <div class="container">
+        <h2>Play it your way!</h2>
+        <p>Take your time, choose a platform, get a console, choose your games and play it your way.</p>
+        <p>Let us handle everything else.</p>
+      </div>
+    </section>
+
+    <section id="shop">
+      <div class="container">
+        <h1 class="header">First, let's choose a platform!</h1>
+        <p class="description-header">It all starts with a platform that you show your passion with...</p>
+        <div id="console-container">
+          <div id="ps">
+            <a href="#" id="ps-console">
+              <div class="console-logo" id="sony"></div>
+              <p class="hook-description">Dive into the exclusive world of Playstation</p>
+              <p class="description">Sony offers a wide variety of exclusive games, on top of their high-end machines. It's definitely a great choice for anyone.</p>
+            </a>
+          </div>
+          <div id="xbox">
+            <a href="#" id="xbox-console">
+              <div class="console-logo" id="microsoft"></div>
+              <p class="hook-description">Experience the power of Xbox machines</p>
+              <p class="description">Be a part of Xbox community and before you even realize, you'll find yourself conquering special game titles one after another.</p>
+            </a>
+          </div>
+          <div id="switch">
+            <a href="#" id="switch-console">
+              <div class="console-logo" id="nintendo"></div>
+              <p class="hook-description">Bring your joy everywhere with Switch</p>
+              <p class="description">You travel a lot? You still want immersive experience with gaming? It's a portable consoles, it's a Nintendo Switch!</p>
+            </a>
+          </div>
+        </div>
+
+        <h1 class="header">Gear it up and choose some games</h1>
+        <p class="description-header">Your journey shall begin here.</p>
+        <div id="gear-container">
+          <div id="gear">
+            <a href="#" id="accessories">
+              <div class="console-logo" style="background: url(img/accessories.jpg) no-repeat center; background-size: cover;"></div>
+              <p class="hook-description">You need another controller? More memory? We have it covered!</p>
+              <p class="description">We have additional themed-controllers as well as memory cards for you to keep going.</p>
+            </a>
+          </div>
+          <div id= "games-container">
+            <a href="#" id="games">
+              <div class="console-logo" style="background: url(img/games.jpg) no-repeat center; background-size: cover;"></div>
+              <p class="hook-description">Let's get going with your favorite game titles.</p>
+              <p class="description">We have lots of different games for each platform that will definitely suit your preference.</p>
+            </a>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div>
+        <a href="#" id="back-btn" class="back-btn">
+          <i class="fas fa-arrow-left fa-2x"></i>
+        </a>
+      </div>
+      <div id="shop-return">
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div id="footer-container">
+          <div id="footer-info">
+            <h4>About</h4>
+            <p>This is a website made as a submission for my last assignment for WEB222</p>
+            <h4>Credit</h4>
+            <p>All source are referenced <a href="credit.html">here</a>.</p>
+          </div>
+          <div id="subscription">
+            <h4>Subscribe for more detail!</h4>
+            <form method="POST" action="//formspree.io/your@email.com">
+              <input type="email" placeholder="Enter email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+        <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px;">Minh Triet Nhan, Copyright &copy; 2020 </p>
+      </div>
+    </footer>
+    <!--
+      Part 1: Main Store Page
+
+      Requirements:
+
+      1. Header across the top must include your store's name, a logo,
+      and use a different background colour, web font, etc.  You must also include
+      a link to your contact.html page.  Your header should include info about
+      what the store is, what it sells, etc.  Use some images to try and draw
+      the user in.  NOTE: place all your site's images in the `src/images/` directory.
+
+      2. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture
+        - the item's name/title
+        - a more complete description of the item
+        - a category (i.e., each item must belong to a category)
+        - a price.
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).
+
+      3. A sidebar (left or right, depending on your design) of the item layout
+      section, showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      4. Below the items, a footer with the name of the store, any relevant links you
+      need to give users, as well as a small HTML form for entering an Email
+      address and clicking a "Subscribe" button to subscribe to the store's
+      newsletter. Use https://formspree.io/ to automatically submit the form to
+      your email address (i.e., when a user fills out their email address and
+      clicks submit, *you* should get that information sent to your email
+      address via formspree.io).  Make sure you setup your account on
+      https://formspree.io/.
+
+      5. Use two different Web Fonts for your store.  The titles should be different
+      from any regular text.  Use a free font service like https://fonts.google.com/
+      or any other that you choose.  You can also experiment with different font
+      sizes and colours to draw attention toward or away from various parts of
+      your design.
+
+      6. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      7. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      8. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      9. Make sure you reduce the download size of images you include in your
+      store.  Users don't want to download 10s or 100s of megabytes of data, especially
+      on mobile.  You can use an online tool like https://squoosh.app/ to help you
+      reduce images.  You will lose marks if your images aren't optimized for the web.
+       
+
+      10. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      11. Make sure your forms all work as they should, testing them yourself,
+      and also have someone else test it for you.  The easiest way to find bugs
+      in software is to let someone who didn't build it try to use it!
+      
+    -->
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+  
+</html>

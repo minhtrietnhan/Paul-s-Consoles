@@ -1,0 +1,161 @@
+/** Add any CSS you need to this file. */
+body {
+    background-color:#F8F9F9;
+    padding: 0;
+    margin: 0;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+
+header {
+    background: #45B39D;
+}
+
+header .brand {
+    float: left;
+}
+
+#logo {
+    height: auto;
+    padding: 0 0 0 0;
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+
+.brand h1 {
+    position: relative;
+    top: 7px;
+    left: 10px;
+    padding: 0 0 0 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 130%;
+}
+
+header nav {
+    float: right;
+    padding: 30px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    font-size: 115%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    font-weight: bolder;
+    color: white;
+}
+
+/* Front showcase */
+#front-img {
+    padding: 0;
+    margin: 0;
+    background: url(./img/showcase.jpg) no-repeat 0 -260px;
+    min-height: 450px;
+    background-size: 100%;
+}
+
+#front-img h2 {
+    margin: 35px 0 10px 700px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#front-img p {
+    margin: 0 0 5px 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Shop */
+#shop h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 10px 0 0 0;
+    margin: 10px 0 0 0;
+}
+
+#shop .description-header {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 0 0 10px 0;
+    margin: 5px 0 20px 0;
+
+}
+
+#console-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 40px;
+}
+
+#ps {
+    flex: 1;
+    width: 30%;
+    margin: 0 30px 15px 0;
+}
+
+#xbox {
+    flex: 1;
+    width: 30%;
+    margin: 0 30px 15px 0;
+}
+
+#nintendo {
+    flex: 1;
+    width: 30%;
+    margin: 0 30px 15px 0;
+}
+
+#console-container .hook-description {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+#console-container img {
+    width: 80%;
+}
+
+
+@media(max-width: 768px) {
+    
+}

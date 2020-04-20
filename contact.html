@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6444ab55f7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="brand">
+          <a href="index.html"><img id="logo" src="img/video-game-controller.png" alt="logo"></a>
+          <a href="index.html"><h1>Paul's Consoles</h1></a>
+        </div>
+        
+        <nav>
+          <ul>
+            <li><a href="index.html" id="shop-nav">Shop</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="front-img">
+      <div class="container">
+        <h2>Play it your way!</h2>
+        <p>Take your time, choose a platform, get a console, choose your games and play it your way.</p>
+        <p>Let us handle everything else.</p>
+      </div>
+    </section>
+
+    <section id="contact-form">
+      <div class="container">
+        <h1 class="header" style="margin: 30px 0 20px 0; color: black; font-size: 30px;">Want to share a message with us? Or any complaints?</h1>
+        <div>
+          <form action="https://httpbin.org/post" method="POST" class="form-wrapper">
+            <div class="input-fields">
+              <input type="text" class="input" placeholder="Last Name">
+              <input type="text" class="input" placeholder="First Name">
+              <input type="email" class="input" placeholder="Email">
+              <input type="text" class="input" placeholder="Address">
+              <input type="text" class="input" placeholder="City" list="cities">
+              <datalist id="cities">
+                <option value="Toronto"></option>
+                <option value="Missisauga"></option>
+                <option value="New Market"></option>
+                <option value="Calgary"></option>
+                <option value="Ottawa"></option>
+              </datalist>
+              <input type="text" class="input" placeholder="Postal Code" pattern="[A-Z][0-9][A-Z]-[0-9][A-Z][0-9]">
+              <input type="tel" class="input" placeholder="Phone Number" pattern="^\d{3}-\d{3}-\d{4}$">
+              <label for="phoned" style="font-family: 'Baloo Paaji 2', cursive; font-size: 20px; display: inline;">Do you want to be phone?</label>
+              <input type="checkbox" class="input" id="phoned" value="Yes" style="margin: 0;">
+              <input type="hidden" value="Minh Triet Nhan">
+            </div>
+
+            <div class="msg">
+              <textarea placeholder="Message" cols="30" rows="20"></textarea>
+              <div class="submit-btn"><input type="submit" placeholder=""></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div id="footer-container">
+          <div id="footer-info">
+            <h4>About</h4>
+            <p>This is a website made as a submission for my last assignment for WEB222</p>
+            <h4>Credit</h4>
+            <p>All source are referenced <a href="credit.html">here</a>.</p>
+          </div>
+          <div id="subscription">
+            <h4>Subscribe for more detail!</h4>
+            <form method="POST" action="//formspree.io/your@email.com">
+              <input type="email" placeholder="Enter email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+        <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px;">Minh Triet Nhan, Copyright &copy; 2020 </p>
+      </div>
+    </footer>
+    <!--    
+
+    Part 2: Contact Us Page
+
+    Requirements:
+
+    1. Use the same header/footer, colours, fonts, etc. as your index.html page.
+    It should be obvious to the user they they are still on the same site, and that
+    contact.html is part of your store.
+
+    2. Include an HTML Form for the user to fill out his or her information along
+    with their message to you. Your form should including the following, and all
+    fields should be mandatory unless otherwise noted, and use the most appropriate <input> type:
+    
+        - First Name
+        - Last Name
+        - Email Address
+        - Address
+        - City (use a <datalist> for autocomplete of common Canadian cities)
+        - Phone Number (must be a valid Canadian Phone Number, use regex)
+        - Postal Code (must be a valid Canadian Postal Code, use regex)
+        - Checkbox Option to be phoned ("Would you like to be phoned?")
+        - Radio Options to specify what this is about: one of "Question",
+          "Comment", or "Order Problem". If the user selects "Order Problem",
+          dynamically reveal another input box to enter the order number. In the
+          case of "Comment" or "Question" hide this input box.
+        - A large area to enter the message that they want to send
+        - A hidden input field with your name
+
+    3. The form should submit to https://httpbin.org/post using the POST method,
+    and only allow the user to submit when all data has been entered and there
+    aren't any validation errors.  The data posted to httpbin.org should include
+    all data defined in the form above (e.g., visible and hidden fields).
+
+  --></body>
+</html>

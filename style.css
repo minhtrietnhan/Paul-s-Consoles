@@ -1,0 +1,419 @@
+/** Add any CSS you need to this file. */
+body {
+    background-color:#F8F9F9;
+    padding: 0;
+    margin: 0;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.displayNone {
+    display: none;
+}
+
+/* Header */
+
+header {
+    background: #45B39D;
+}
+
+.brand {
+    float: left;
+}
+
+.brand h1 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    margin: 0;
+    font-weight: bolder;
+}
+
+#logo {
+    float: left;
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    background-size: 10%;
+}
+
+header nav {
+    float: right;
+    padding: 30px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    font-size: 115%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    font-weight: bolder;
+    color: white;
+    transition: 0.3s;
+}
+
+header .current a {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/* Front showcase */
+#front-img {
+    padding: 0;
+    margin: 0;
+    background: url(../img/showcase.jpg) no-repeat center;
+    min-height: 450px;
+    background-size: cover;
+}
+
+#front-img h2 {
+    margin: 35px 0 10px 700px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#front-img p {
+    margin: 0 0 5px 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Shop */
+.header {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    padding: 10px 0 0 0;
+    margin: 10px 0 0 0;
+}
+
+#shop .description-header {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    padding: 0 0 10px 0;
+    margin: 5px 0 20px 0;
+
+}
+
+#console-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 80px;
+}
+
+#ps, #xbox, #switch {
+    flex: 1;
+    width: 30%;
+    margin: 0 30px 15px 0;
+}
+
+#sony {
+    background: url(./img/pslogo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#sony:hover {
+    background: url(./img/dualshock.png) no-repeat center;
+    height: 180px;
+    background-size: 60%;
+}
+
+#microsoft {
+    background: url(./img/xboxlogo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#microsoft:hover {
+    background: url(./img/xboxcontroller.png) no-repeat center;
+    height: 180px;
+    background-size: 100%;
+}
+
+#nintendo {
+    background: url(./img/switchlogo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#nintendo:hover {
+    background: url(./img/switchcontroller.png) no-repeat center;
+    height: 180px;
+    background-size: 40%;
+}
+
+.hook-description {
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word;
+    margin: 10px 0 10px 0;
+    line-height: 25px;
+}
+
+.description {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    font-weight: lighter;
+    margin-top: 0;
+    line-height: 25px;
+}
+
+#gear-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 80px;
+}
+
+#gear {
+    flex: 1;
+    width: 30%;
+    margin: 0 50px 15px 50px;
+}
+
+#games-container {
+    flex: 1;
+    width: 30%;
+    margin: 0 80px 15px 50px;
+}
+
+.product {
+    flex: 1;
+    margin: 0 20px 20px 20px;
+    width: 25%;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-btn {
+    color: black;
+    float: right;
+    margin-right: 50px;
+}
+
+.back-btn i {
+    font-size: 50px;
+}
+
+.back-btn:hover {
+    color: #45B39D;
+    transition: 0.3s ease-in-out;
+}
+
+footer {
+    background: #45B39D;
+}
+
+#footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#footer-info {
+    grid-column-start: 1;
+}
+
+#footer-info h4 {
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer-info p {
+    margin: 0 0 10px 0;
+    font-weight: lighter;
+    font-size: smaller;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#subscription {
+    grid-column-start: 3;
+}
+
+#subscription h4 {
+    margin: 20px 0 5px 0;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#subscription input[type="email"] {
+    height: 30px;
+    width: 200px;
+}
+
+#subscription input[type="submit"] {
+    background-color: #116979;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 32px;
+    text-align: center;
+    color: #ffff;
+    margin: auto;
+}
+
+/* Contact */
+#contact-form {
+    background: url(img/contact_img.jpg) no-repeat center;
+    background-size: cover;
+    height: 120vh;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: white;
+}
+
+.form-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 7px;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+    width: 48%;
+}
+
+.input-fields .input,
+.msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+
+.submit-btn {
+    background: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.submit-btn input[type="submit"] {
+    color: black;
+    background-color: whitesmoke;
+    border: 0;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .brand, header nav {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #front-img h2, #front-img p {
+        display: none;
+    }
+
+    #console-container, .product-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 0 0 80px;
+        align-items: center;
+    }
+
+    #gear-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 0 0 80px;
+        align-items: center;
+    }
+
+    #console-container {
+        margin: 0 0 0 40px;
+    }
+
+    .console-logo {
+        height: 180px;
+    }
+
+    .hook-description {
+        margin-top: 0;
+    }
+
+    #footer-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-info {
+        flex: 1;
+    }
+
+    #subscription {
+        flex: 1;
+    }
+}
+
+@media(min-width: 769px) {
+    #console-container {
+        margin: 0 0 0 70px;
+    }
+
+    .console-logo {
+        height: 180px;
+    }
+}
